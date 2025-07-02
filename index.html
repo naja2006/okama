@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="/assets/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container mt-2">
-        <a class="navbar-brand" href="#"><img src="/assets/images/logo main - Copy.png" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid d-flex align-content-center justify-content-between mt-2">
+        <a class="navbar-brand" href="#"><img class="img-fluid logoimg" src="/assets/images/logo main - Copy.png"
+            alt="logo"></a>
+        <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center order-1 order-lg-0" id="navbarNav">
           <ul class="navbar-nav gap-5">
             <li class="nav-item">
               <a class="nav-link active white" aria-current="page" href="#">Home</a>
@@ -48,21 +50,21 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="assets/images/banner img.jpg" class="d-block w-100 back" alt="img1">
-          <div class="carousel-caption d-none d-md-block title">
+          <div class="carousel-caption d-block title">
             <h1 class="fonts">"Bringing Flavor To The Streets"</h1>
             <p class="fonts">Making your day memorable!!</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="assets/images/banner img2.avif" class="d-block w-100 back" alt="img2">
-          <div class="carousel-caption d-none d-md-block title">
+          <div class="carousel-caption d-block title">
             <h1 class="fonts">"Fresh,Fast,And Full Of Taste"</h1>
             <p class="fonts">Making your day memorable!!</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="/assets/images/banner img3.webp" class="d-block w-100 back" alt="img3">
-          <div class="carousel-caption d-none d-md-block title">
+          <div class="carousel-caption d-block title">
             <h1 class="fonts">"Your Favorite Bites On Wheels"</h1>
             <p class="fonts">Making your day memorable!!</p>
           </div>
@@ -83,102 +85,122 @@
   </header>
   <section>
     <div class="container text-center">
-      <div class="row">
-                  <h2 class="d-flex justify-content-center down mt-5 fonts">Our Special Items!</h2>
-                  <p class="fonts">"Serving Happiness,One Dish At A Time"</p>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card" style="width: 15rem;">
-            <img class="card-img-top cls" src="/assets/images/burger.jpg" alt="Card image cap">
+      <!-- Heading and subtitle outside row or inside a full-width col -->
+      <h2 class="down mt-5 fonts">Our Special Items!</h2>
+      <p class="fonts">"Serving Happiness, One Dish At A Time"</p>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top cls" src="/assets/images/burger.jpg" alt="Burger">
             <div class="card-body">
               <h5 class="card-title">Burger</h5>
-              <p class="card-text">"juicy beef patty,cheddar cheese,fresh veggies"</p>
-              <p class="fw-bold">Price:$120</p>
+              <p class="card-text">"juicy beef patty, cheddar cheese, fresh veggies"</p>
+              <p class="fw-bold">Price: $120</p>
               <a href="#" class="btn btn-outline" id="orr">Order Now</a>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card" style="width: 15rem;">
-            <img class="card-img-top cls" src="/assets/images/tacos.jpg" alt="Card image cap">
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top cls" src="/assets/images/tacos.jpg" alt="Tacos Tuesday Combo">
             <div class="card-body">
               <h5 class="card-title">Tacos Tuesday Combo</h5>
               <p class="card-text">"3 juicy filled tacos and fresh soft drink"</p>
-              <p class="fw-bold">Price:$199</p>
+              <p class="fw-bold">Price: $199</p>
               <a href="#" class="btn btn-outline" id="phn">Order Now</a>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card" style="width: 15rem;">
-            <img class="card-img-top cls" src="/assets/images/panner pizza.webp" alt="Card image cap">
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top cls" src="/assets/images/panner pizza.webp" alt="Panner Pizza">
             <div class="card-body">
               <h5 class="card-title">Panner Pizza</h5>
-              <p class="card-text">"Soft panner cubes melted chesse"</p>
-              <p class="fw-bold">Prize:$199</p>
-              <p>
-              </p>
+              <p class="card-text">"Soft panner cubes melted cheese"</p>
+              <p class="fw-bold">Price: $199</p>
               <a href="#" class="btn btn-outline" id="more">Order Now</a>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card" style="width: 15rem;">
-            <img class="card-img-top cls" src="/assets/images/fried chicken.jpg" alt="Card image cap">
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top cls" src="/assets/images/fried chicken.jpg" alt="Fried Chicken">
             <div class="card-body">
               <h5 class="card-title">Fried Chicken</h5>
-              <p class="card-text">"crispy and tasty korean recipe fried chicken</p>
-              <p class="fw-bold">Prize:$199</p>
-              <a href="#" class="btn btn-outline " id="now"> Order Now</a>
+              <p class="card-text">"crispy and tasty korean recipe fried chicken"</p>
+              <p class="fw-bold">Price: $199</p>
+              <a href="#" class="btn btn-outline" id="now">Order Now</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <section>
-    <div class="container text-center">
-      <h2 class="mb-4 mt-5 fonts">ABOUT US</h2>
-      <div class="row">
-        <div class="col-6">
-          <p class="para text-center place-item-center">A food truck is a mobile vehicle equipped to prepare and sell
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <h2 class="fonts  text-center">ABOUT US</h2>
+          <h6 class="fonts  text-center">"Serving the best food"</h6>
+          <p class=" text-center place-item-center  text-center">A food truck is a mobile vehicle equipped to prepare and sell
             food. It's essentially a restaurant on wheels, offering a variety of cuisines and often specializing in
-            specific dishes or types of food. Food trucks have become increasingly popular due to their flexibility,
-            unique dining experiences, and lower startup costs compared to traditional restaurants. </p>
+            specific dishes or types of food.</p>
+            <div class="text-center justify-content-start">
+            <div class="fonts"><i class="bi bi-patch-check"></i>Proudly serving the flavours</div>
+            <div class="fonts"><i class="bi bi-patch-check"></i>Made fresh and made with heart of taste</div>
+            <div class="fonts"><i class="bi bi-patch-check"></i>Crafted with passion</div>
+            </div>
         </div>
-        <div class="col-6 loo">
-          <img src="/assets/images/about img.png" alt="about">
+        <div class="col-12 col-md-6 loo">
+          <img class="img-fluid" src="/assets/images/about img.png" alt="about">
         </div>
       </div>
     </div>
   </section>
   <section>
     <div class="container text-center">
-      <h2 class="mb-4 mt-5 fonts">SERVICES</h2>
       <div class="row">
-        <div class="col-6 loo">
-          <img src="/assets/images/service img.jpg" alt="services">
+        <div class="col-12 col-md-6 loo">
+          <img class="mt-5 img-fluid" src="/assets/images/service img.jpg" alt="services">
+         
         </div>
-        <div class="col-6">
-          <p class="para text-center place-item-center">A food truck is a mobile vehicle equipped to prepare and sell
+        <div class="col-12 col-md-6">
+           <h2 class="mt-5 fonts">WhY Choose Us?</h2>
+          <h6 class="fonts">"Serving the best food"</h6>
+          <p class="text-center place-item-center">A food truck is a mobile vehicle equipped to prepare and sell
             food. It's essentially a restaurant on wheels, offering a variety of cuisines and often specializing in
-            specific dishes or types of food. Food trucks have become increasingly popular due to their flexibility,
-            unique dining experiences, and lower startup costs compared to traditional restaurants. </p>
+            specific dishes or types of food.</p>
+             <div class="fonts"><i class="bi bi-patch-check"></i>Proudly serving the flavours</div>
+            <div class="fonts"><i class="bi bi-patch-check"></i>Made fresh and made with heart of taste</div>
+            <div class="fonts"><i class="bi bi-patch-check"></i>Crafted with passion</div>
+          
+
         </div>
       </div>
   </section>
   <section>
-    <div class="container text-center">
-      <h2 class="mb-4 mt-5">BLOG</h2>
+    <div class="container">
       <div class="row">
-        <div class="col-6 ">
-          <p class="para text-center place-item-center">Food trucks are more than just a trend—they’re a movement.
+        <div class="col-12 col-md-6">
+          <h2 class="mt-5 fonts">Our Vision</h2>
+          <h6 class="fonts">"Serving the best food"</h6>
+          <p class=" text-center place-item-center">Food trucks are more than just a trend—they’re a movement.
             They embody creativity, hustle, and a love for good food shared in the most accessible way possible. So
             next time you see one parked nearby, take a break from the ordinary and grab a bite from the curbside
             kitchen.</p>
-
+            <div>
+             <div class="fonts"><i class="bi bi-patch-check"></i>Proudly serving the flavours</div>
+            <div class="fonts"><i class="bi bi-patch-check"></i>Made fresh and made with heart of taste</div>
+            <div class="fonts"><i class="bi bi-patch-check"></i>Crafted with passion</div>
+              </div>
         </div>
-        <div class="col-6 loo">
-          <img src="/assets/images/blog img.png" alt="blog">
+        <div class="col-12 col-md-6 loo">
+          <img class="mt-5 img-fluid" src="/assets/images/blog img.png" alt="blog">
         </div>
       </div>
     </div>
@@ -186,104 +208,107 @@
 
   <section>
     <div class="container text-center">
-      <h2 class="mb-4 mt-5">Gallery</h2>
+      <h2 class="mt-5 fonts">Gallery</h2>
+      <h6 class="fonts">"Serving the best food"</h6>
+
       <div class="row">
-        <div class="col-4 loo-laa">
-          <img src="/assets/images/gallery img1.jpg" alt="img1">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 loo-laa mb-4">
+          <img class="img-fluid" src="/assets/images/gallery img1.jpg" alt="img1">
         </div>
-        <div class="col-4 loo-laa">
-          <img src="/assets/images/gallery img2.jpg" alt="img2">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 loo-laa mb-4">
+          <img class="img-fluid" src="/assets/images/gallery img2.jpg" alt="img2">
         </div>
-        <div class="col-4 loo-laa">
-          <img src="/assets/images/gallery img3.jpg" alt="img3">
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-4 loo-laa">
-          <img src="/assets/images/gallery img4.jpg" alt="img4">
-        </div>
-        <div class="col-4 loo-laa">
-          <img src="/assets/images/gallery img5.jpg" alt="img5">
-        </div>
-        <div class="col-4 loo-laa">
-          <img src="/assets/images/gallery img6.jpg" alt="img6">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 loo-laa mb-4">
+          <img class="img-fluid" src="/assets/images/gallery img3.jpg" alt="img3">
         </div>
       </div>
-    </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 loo-laa mb-4">
+          <img class="img-fluid" src="/assets/images/gallery img4.jpg" alt="img4">
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 loo-laa mb-4">
+          <img class="img-fluid" src="/assets/images/gallery img5.jpg" alt="img5">
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 loo-laa mb-4">
+          <img class="img-fluid" src="/assets/images/gallery img6.jpg" alt="img6">
+        </div>
+      </div>
     </div>
   </section>
-  
+
+
   <section>
-      <!-- Footer -->
-      <footer class="text-center  bg-body-tertiary text-muted">
-        <div class="container-fluid full-colour">
+    <!-- Footer -->
+    <footer class="text-center  bg-body-tertiary text-muted">
+      <div class="container-fluid full-colour">
         <!-- Section: Social media -->
-       
 
-          <div class="me-5 d-none d-lg-block mt-5 pt-5">
-            <span class="colour">
-              <h2 class="text-center">Join Our Newsletter</h2>
-              <p class="text-center">Subscribe to our newsletter and receive the lastest news about our products and
-                services!</p>
-            </span>
-          </div>
 
-        
+        <div class="me-5 d-none d-lg-block mt-5 pt-5">
+          <span class="colour">
+            <h2 class="text-center">Join Our Newsletter</h2>
+            <p class="text-center">Subscribe to our newsletter and receive the lastest news about our products and
+              services!</p>
+          </span>
+        </div>
+
+
         <!-- Section: Social media -->
 
         <!-- Section: Links  -->
-          <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
-                <h4 class="text-uppercase fw-bold mb-4 colour">
-                  <i class="fas fa-gem me-3 text-center"></i>OKAMA
-                </h4>
-                <h4 class="colour">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h4 class="text-uppercase fw-bold mb-4 colour">
+                <i class="fas fa-gem me-3 text-center"></i>OKAMA
+              </h4>
+              <h4 class="colour">
                 "Your Favorite Flavours,
-                 Travelling To Where You Are!!"
-                </h4>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 colour">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-3">
-                  Our MENU
-                </h6>
-                <p class="mb-2">
-                Burger
-                </p>
-                <p  class="mb-2">
-                Pizza
-                </p>
-                <p  class="mb-2" >
-                Snack
-                </p>
-                <p  class="mb-2">
-                Cold Drinks
-                </p>
-              </div>
-
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-3 colour">Contact</h6>
-                <p class="colour mb-2"><i class="fas fa-home me-3"></i> india,In 10012,Asia</p>
-                <p class="colour mb-2">
-                  <i class="fas fa-envelope me-3"></i>
-                  info@okama.com
-                </p>
-                <p class="colour mb-2"><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                <p class="colour mb-2"><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-              </div>
-              <!-- Grid column -->
+                Travelling To Where You Are!!"
+              </h4>
             </div>
-            <!-- Grid row -->
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 colour">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-3">
+                Our MENU
+              </h6>
+              <p class="mb-2">
+                Burger
+              </p>
+              <p class="mb-2">
+                Pizza
+              </p>
+              <p class="mb-2">
+                Snack
+              </p>
+              <p class="mb-2">
+                Cold Drinks
+              </p>
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-3 colour">Contact</h6>
+              <p class="colour mb-2"><i class="fas fa-home me-3"></i> india,In 10012,Asia</p>
+              <p class="colour mb-2">
+                <i class="fas fa-envelope me-3"></i>
+                info@okama.com
+              </p>
+              <p class="colour mb-2"><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p class="colour mb-2"><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
           </div>
+          <!-- Grid row -->
+        </div>
         <!-- Section: Links  -->
 
         <!-- Copyright -->
@@ -292,9 +317,9 @@
           <a class="text-reset fw-bold colour" href="https://okama.com/">okama.com</a>
         </div>
         <!-- Copyright -->
-         </div>
-      </footer>
-      <!-- Footer -->
+      </div>
+    </footer>
+    <!-- Footer -->
 
 
 
@@ -314,9 +339,9 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"></script>
 
 </body>
 

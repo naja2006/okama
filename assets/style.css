@@ -1,12 +1,12 @@
 .navbar-brand{
-    height:150px;
+    height:60px;
     width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .nav-brand img{
-    width: 150px;
+    width: 50px;
     height: 150px;
     left: 100px;
 }
@@ -15,13 +15,18 @@
 
  
 }
+.logoimg{
+    width: 50px;
+    height: 50px;
+}
 .back{
     height:600px;
     object-fit: cover;
+filter: brightness(40%);
 }
 
 .title{
-    margin-bottom: 210px;
+    margin-bottom:200px;
     }
 .banner-text{
     height: 50vh;
@@ -38,16 +43,17 @@ img{
 .card{
     margin-bottom: 50px;
 }
-
-.para{
-    margin-top:60px;
+.card:hover{
+    transform: translateY(-8px);
 }
+
 
 .cls{
     height:150px;
     object-fit: cover;
 
 }
+
 
 .loo img{
     height: 300px;
@@ -59,6 +65,9 @@ img{
     width: 300px;
     justify-content:space-around;
     object-fit: cover;
+}
+.loo-laa:hover{
+    transform: translateY(-8px);
 }
 .colour{
     color: white;
@@ -85,9 +94,7 @@ img{
 }
 .fonts{
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-
-}
+    font-weight: bold;}
     
 #black:hover{
     background-color:rgb(137,206,137);
@@ -99,3 +106,21 @@ img{
 .down{
     margin-top:5px;
 }
+#phn:hover{
+    background-color:orangered;
+    color: black;
+}
+#orr:hover{
+     background-color:orangered;
+    color: black;
+}
+#more:hover{
+     background-color:orangered;
+    color: black;
+}
+#now:hover{
+     background-color:orangered;
+    color: black;
+}
+
+
